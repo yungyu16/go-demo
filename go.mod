@@ -2,17 +2,25 @@ module github.com/yungyu16/go-demo
 
 go 1.24.2
 
-require google.golang.org/protobuf v1.36.6
+require (
+	github.com/creack/pty v1.1.24
+	github.com/labstack/echo/v4 v4.13.4
+	google.golang.org/protobuf v1.36.6
+)
 
 require (
-	github.com/labstack/echo/v4 v4.13.4 // indirect
+	github.com/karalabe/hid v1.0.0 // indirect
+	github.com/karalabe/usb v0.0.2 // indirect
 	github.com/labstack/gommon v0.4.2 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.2 // indirect
-	golang.org/x/crypto v0.38.0 // indirect
-	golang.org/x/net v0.40.0 // indirect
-	golang.org/x/sys v0.33.0 // indirect
-	golang.org/x/text v0.25.0 // indirect
+	golang.org/x/crypto v0.43.0 // indirect
+	golang.org/x/mod v0.29.0 // indirect
+	golang.org/x/net v0.46.0 // indirect
+	golang.org/x/sync v0.17.0 // indirect
+	golang.org/x/sys v0.37.0 // indirect
+	golang.org/x/text v0.30.0 // indirect
+	golang.org/x/tools v0.38.0 // indirect
 )

@@ -1,8 +1,20 @@
+//go:generate stringer -type=Pill
+
 package main
 
 import (
-	"github.com/labstack/echo/v4"
 	"net/http"
+
+	"github.com/labstack/echo/v4"
+)
+
+type Pill int
+
+const (
+	Placebo Pill = iota
+	Aspirin
+	Aspirin2
+	Aspirin3
 )
 
 func main() {
