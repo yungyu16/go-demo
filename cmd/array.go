@@ -24,12 +24,20 @@ func init() {
 	}
 }
 
+const 大写 = 3
+
 func main() {
 	fmt.Println("=====")
+	嘉琳()
+}
+
+func 嘉琳() {
+	fmt.Println("酆都")
 }
 
 type Demo int
 
 func (receiver *Demo) name() {
 	fmt.Println("name:", receiver)
+
 }

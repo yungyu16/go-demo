@@ -10,6 +10,10 @@ func main() {
 	pingPong()
 }
 
+type d struct {
+	a string `json:"a"`
+}
+
 func deadlock() {
 	pings := make(chan string, 1)
 	s := <-pings
