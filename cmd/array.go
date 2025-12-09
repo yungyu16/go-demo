@@ -9,7 +9,7 @@ import (
 
 var cwd string
 
-func init() {
+func init0() {
 	name := 0o_11_11_11
 	name1 := 0x_11_11_11
 	name2 := 0b_11_11_11
@@ -26,9 +26,18 @@ func init() {
 
 const 大写 = 3
 
+func mightPanic() string {
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("Recovered from:", r)
+		}
+	}()
+
+	panic("error")
+}
+
 func main() {
-	fmt.Println("=====")
-	嘉琳()
+	fmt.Println("Returned:", mightPanic())
 }
 
 func 嘉琳() {
