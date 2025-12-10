@@ -15,6 +15,9 @@ var (
 )
 
 func main() {
+	for i2 := range 3 {
+		fmt.Println(i2)
+	}
 	c1 := pkgA.C{}
 	c2 := pkgB.C{}
 
@@ -25,4 +28,18 @@ func main() {
 	fmt.Println(t2.PkgPath()) // "example.com/project/b"
 	fmt.Println(t1.Name())    // "C"
 	fmt.Println(t2.Name())    // "C"
+
+	for range 3 {
+		fmt.Println("1")
+	}
+	for range "中国人" {
+		fmt.Println("2")
+	}
+	for range []int{1, 2, 3} {
+		fmt.Println("3")
+	}
+	for i := 0; i < 3; {
+		fmt.Println("")
+	}
+
 }
