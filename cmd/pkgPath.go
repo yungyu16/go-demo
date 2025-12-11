@@ -42,6 +42,10 @@ func main() {
 		fmt.Println("")
 	}
 
+	go fa()(1)
+}
+func fa() func(int) int {
+	return nil
 }
 
 func f(a int, b int, c float64) int {
@@ -52,4 +56,10 @@ func f(a int, b int, c float64) int {
 
 type AA interface {
 	a(int) int
+}
+
+type Color int
+
+func (c Color) a(a int) Color {
+	return c + Color(a)
 }
