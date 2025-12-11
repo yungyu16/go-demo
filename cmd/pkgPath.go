@@ -43,3 +43,13 @@ func main() {
 	}
 
 }
+
+func f(a int, b int, c float64) int {
+	var aa AA
+	aa.a(1)
+	return 1
+}
+
+type AA interface {
+	a(int) int
+}
