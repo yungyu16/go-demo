@@ -1,4 +1,0 @@
-package std
-
-func main() {
-}
